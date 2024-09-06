@@ -1,3 +1,5 @@
+/*Ejercicio 7. Modifica el ejercicio anterior para que utilice un ciclo for. ¿Cuál es la diferencia?*/
+
 #include<stdio.h>
 int main()
 {
