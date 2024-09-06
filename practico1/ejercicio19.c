@@ -1,3 +1,6 @@
+/*Ejercicio 19. Escriba un programa que permita ingresar un número entero N e imprima la cantidad de dígitos
+del número. (PS)*/
+
 #include <stdio.h>
 int main()
 {
