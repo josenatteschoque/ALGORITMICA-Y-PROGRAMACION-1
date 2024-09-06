@@ -1,3 +1,6 @@
+/*Ejercicio 8. Escriba un programa que pregunte la fecha de nacimiento del usuario e imprima por pantalla la
+edad exacta. (PS) (PE 03/02/1990)*/
+
 #include<stdio.h>
 int main()
 {
