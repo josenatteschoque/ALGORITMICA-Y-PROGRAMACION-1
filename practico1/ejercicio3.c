@@ -1,3 +1,5 @@
+/*Ejercicio 3. Escriba un programa que pregunte el año de nacimiento del usuario e imprima por pantalla la
+edad aproximada.*/
 #include <stdio.h>
 int main()
 {
