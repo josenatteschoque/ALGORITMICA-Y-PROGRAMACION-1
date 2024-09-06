@@ -1,3 +1,6 @@
+/*Ejercicio 6. Modifica el ejercicio anterior para que utilice un ciclo do while en lugar de un ciclo while. ¿Cuál es
+la diferencia?*/
+
 #include<stdio.h>
 int main()
 {
