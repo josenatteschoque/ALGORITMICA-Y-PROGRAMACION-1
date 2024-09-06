@@ -1,3 +1,6 @@
+/*Ejercicio 9. Escriba un programa que pregunte la fecha de nacimiento del usuario e imprima por pantalla la
+estación del año (en el hemisferio austral) en que cumple años.*/
+
 #include<stdio.h>
 int main()
 {
