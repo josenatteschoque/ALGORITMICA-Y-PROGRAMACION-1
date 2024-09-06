@@ -1,3 +1,6 @@
+/*Ejercicio 20. Escriba un programa que permita ingresar dos números enteros N y M, y operador aritmético
+(“+”, “-”, “*”, “/”) e imprima el resultado de la operación indicada tomando N y M como operandos.*/
+
 #include <stdio.h>
 int main()
 {
