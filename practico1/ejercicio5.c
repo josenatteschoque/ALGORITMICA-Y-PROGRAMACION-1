@@ -1,3 +1,6 @@
+/*Ejercicio 5. Escribe un programa que pida al usuario que ingrese un número y luego cuente desde 1 hasta ese
+número, mostrando cada número en pantalla. Utiliza una estructura while para lograr esto.*/
+
 #include <stdio.h>
 int main()
 { 
