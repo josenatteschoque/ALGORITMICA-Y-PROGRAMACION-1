@@ -1,3 +1,6 @@
+/*Ejercicio 13. Escriba un programa que permita ingresar un número natural N y otro número natural M, e
+imprima el resultado de N elevado a la M calculándolo como suma sucesivas. (PS) (PE N=5, M=3)*/
+
 #include <stdio.h>
 
 int main() 
