@@ -1,2 +1,2 @@
-# trabajo-practico-n1-AYP-1-
+# ALGORITMICA Y PROGRAMACION 1-
 holaa es mi primer repositorio :)
