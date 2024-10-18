@@ -17,6 +17,7 @@ int edad;
 };*/
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
 
 int calcular_edad(int *mm, int *aa)
 {
@@ -33,39 +34,46 @@ int calcular_edad(int *mm, int *aa)
         edad2 = edad1;
         return edad2;
     }
-    else if (*mm < mes)
+    else 
     {
-        edad1 - 1;
-        return edad1;
+       edad2 = edad1 - 1;
+       return edad1;
     }
 }
 
+struct persona
+{
+    char nombre[50];
+    char apellido[50];
+};
+struct fecha_nacimiento
+{
+    int dia;
+    int mes;
+    int anio;
+};
+
 int main()
 {
-    struct persona
-    {
-        char nombre[50];
-        char apellido[50];
-    };
-    struct fecha_nacimiento
-    {
-        int dia;
-        int mes;
-        int anio;
-    };
     struct persona per;
     struct fecha_nacimiento edad;
     printf("ingrese su nombre: ");
-    scanf(" %s", per.nombre);
+    fgets(per.nombre, 50, stdin);
+
+    if(per.nombre[strlen(per.nombre) -1]=='\n') //esto checkea si en el arreglo esta el salto de linea
+    {
+        per.nombre[strlen(per.nombre) -1] = '\0'; //esto borra el salto de linea 
+    }
     printf("ingrese su apellido: ");
-    scanf(" %s", per.apellido);
+    fgets(per.apellido, 50, stdin);
+
+    if(per.apellido[strlen(per.apellido) -1] =='\n') //esto checkea si en el arreglo esta el salto de linea
+    {
+        per.apellido[strlen(per.apellido) -1] = '\0'; //esto borra el salto de linea 
+    }
     printf("ingrese su fecha de nacimiento en el formato dd/mm/aaaa:\n");
-    scanf("%d", &edad.dia);
-    scanf("%d", &edad.mes);
-    scanf("%d", &edad.anio);
+    scanf("%d %d %d", &edad.dia, &edad.mes, &edad.anio);
     printf("la persona %s %s nacio el  %d/%d/%d y tiene %d anios de edad", per.nombre, per.apellido, edad.dia ,edad.mes ,edad.anio ,calcular_edad(&edad.mes, &edad.anio));
 
     return 0;
 }
-
-//duda en la linea 60 cuando ingrese otro apellido se salta de linea
